@@ -48,7 +48,7 @@ print("")
 print(Fore.YELLOW+"\n Please subscribe to the channel to receive updates :")
 print("")
 
-print(Fore.BLUE+"\n Rubika --> @Belectron_bot")
+print(Fore.BLUE+"\n Rubika --> @robot_000")
 print("")
 
 Sa=Figlet(font="slant")
@@ -58,7 +58,7 @@ print("")
 bot = Bot("Bel", auth=input("Please Enter Your Auth :"))
 target=input("Please Enter Your Guid (Group) :")
 
-# Created By Mamad BeLectron
+
 
 def hasAds(msg):
 	links = ["http://","https://",".ir",".com",".org",".net",".me"]
