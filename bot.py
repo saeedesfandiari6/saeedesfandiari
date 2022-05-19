@@ -52,13 +52,13 @@ print(Fore.BLUE+"\n Rubika --> @robot_000")
 print("")
 
 Sa=Figlet(font="slant")
-print(Sa.renderText("BELECTRON"))
+print(Sa.renderText("ROBOT"))
 print("")
 
 bot = Bot("Bel", auth=input("Please Enter Your Auth :"))
 target=input("Please Enter Your Guid (Group) :")
 
-
+# Created By Mamad BeLectron
 
 def hasAds(msg):
 	links = ["http://","https://",".ir",".com",".org",".net",".me"]
@@ -373,7 +373,7 @@ while True:
 								
 						elif msg.get("text").startswith("سلام") or msg.get("text").startswith("سلم") or msg.get("text").startswith("صلام") or msg.get("text").startswith("صلم") or msg.get("text").startswith("سیلام") or msg.get("text").startswith("صیلام"):
 							try:
-								bot.sendMessage(target,'خوبی' ,message_id=msg.get("message_id"))
+								bot.sendMessage(target,'چطوری' ,message_id=msg.get("message_id"))
 							except:
 								print("err hello")
 
@@ -385,7 +385,7 @@ while True:
 
 						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("text"):
 							try:
-					  			bot.sendMessage(target, "فدات تو خوبی", message_id=msg.get("message_id"))
+					  			bot.sendMessage(target, "بخوبیت دلبر", message_id=msg.get("message_id"))
 							except:
 								print("err luagh")
 								
@@ -397,7 +397,7 @@ while True:
 
 						elif msg.get("text") == "/bomber":
 							try:
-								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n #Admin --> @Seyed_xxx", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n #Admin --> @robot7770", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 		
@@ -649,7 +649,7 @@ while True:
 					if data["type"]=="RemoveGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"سیک {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f"تق خارکسه {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err rm member answer")
@@ -657,7 +657,7 @@ while True:
 					elif data["type"]=="AddedGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/@robot_000", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/robot_000", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err add member answer")
@@ -665,7 +665,7 @@ while True:
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"کون لقت {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f"لف دادن کون نیس که هر دفعه میدی {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
@@ -673,7 +673,7 @@ while True:
 					elif data["type"]=="JoinedGroupByLink":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/@robot_000", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/robot_000", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Joined member Answer")
