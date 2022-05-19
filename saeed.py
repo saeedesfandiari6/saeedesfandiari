@@ -649,7 +649,7 @@ while True:
 					if data["type"]=="RemoveGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"تق خارکسه {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f"دیدی کپص پدرت گزاشتم {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err rm member answer")
