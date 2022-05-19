@@ -593,7 +593,7 @@ while True:
 				data = msg['event_data']
 				if data["type"]=="RemoveGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"تق خارکسه {user}", message_id=msg["message_id"])
+					bot.sendMessage(target, f"دیدی کوبص پدرت گزاشتم {user}", message_id=msg["message_id"])
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
