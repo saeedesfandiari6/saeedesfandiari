@@ -2,6 +2,37 @@ import time
 import socket
 import sys
 import _thread
+
+print ("__________")
+time.sleep(0.7)
+print ("#_________")
+time.sleep(0.6)
+print ("##________")
+time.sleep(0.5)
+print ("###_______")
+time.sleep(0.4)
+print ("####______")
+time.sleep(0.3)
+print ("#####_____")
+time.sleep(0.2)
+print ("######____")
+time.sleep(0.1)
+print ("#######___")
+time.sleep(0.5)
+print ("########__")
+time.sleep(0.1)
+print ("#########_")
+time.sleep(0.5)
+print ("##########")
+print ("")
+
+print(Fore.BLUE+"\n Rubika --> @robika_com")
+print("")
+
+Sa=Figlet(font="slant")
+print(Sa.renderText("ROBIKA"))
+print("")
+
 site = input("Enter your site url => ")
 thread_count = input("Enter your thread => ")
 ip = socket.gethostbyname(site)
