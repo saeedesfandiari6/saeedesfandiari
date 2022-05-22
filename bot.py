@@ -397,7 +397,7 @@ while True:
 
 						elif msg.get("text") == "/bomber":
 							try:
-								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n #Admin --> @Seyed_xxx", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n #Admin --> @saeed346", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 		
@@ -657,7 +657,7 @@ while True:
 					elif data["type"]=="AddedGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/BeLectron_bot", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information1 about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/BeLectron_bot", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err add member answer")
@@ -673,7 +673,7 @@ while True:
 					elif data["type"]=="JoinedGroupByLink":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/BeLectron_bot", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/BeLectron1_bot", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Joined member Answer")
@@ -798,7 +798,7 @@ while True:
 						bot.sendMessage(target, "➕ User added to group", message_id=msg.get("message_id"))
 
 					elif msg.get("text") == "/panel":
-						bot.sendMessage(target, "❮ List of robot commands ❯ :\n✅ /start : فعالسازی ربات\n❎ /stop : غیر فعالسازی ربات\n🤖 /bot : وضعیت ربات\n⏳ /time : ساعت\n📆 /date : تاریخ\n♻️ /del : حذف یک پیام\n🔒 /lock : قفل گروه\n🔓 /unlock : باز کردن قفل گروه\n⛔️ /ban : حذف کاربر\n📨 /send : ارسال پیام ناشناس\n🎶 /add : افزودن کاربر به گروه\n🗃 /panel : لیست دستورات ربات\n🔖 /user : اطلاعات کاربر\n📟 /cal : ماشین حساب\n📝 /font : ارسال فونت\n🌐 /ping : گرفتن پینگ سایت\n🔤 /tran : مترجم انگلیسی\n💣 /bomber : اسپم پیامک\n ─┅━━━━━━━┅─ \n🔮 سرگرمی ها :\n✢ با ارسال کلمه جوک ربات برای شما یک جوک ارسال میکند .\n✢ با ارسال کلمه دانستنی ربات برای شما یک دانستنی ارسال میکند .\n ✢ با ارسال کلمه فال ربات برای شما یک فال ارسال میکند .\n✢ با ارسال کلمه داستان ربات برای شما یک داستان ارسال میکند ‌.\n✢ با ارسال کلمه هواشناسی ... ربات آب و هوای اون منطقه رو ارسال میکند .\n✢ با ارسال کلمه اخبار ربات اخبار دقیق همون روز رو ارسال میکند .\n✢ با ارسال کلمه بیوگرافی ربات یک بیوگرافی به طور تصادفی ارسال میکند .\n✢ با ارسال کلمه ذکر ربات ذکر روز رو ارسال میکند.\n✢ با ارسال کلمه حدیث ربات یک حدیث ارسال میکند.\n─┅━━━━━━━┅─ \n🔸ChanneL : rubika.ir/belectron_bot")
+						bot.sendMessage(target, "❮ List of robot commands ❯ :\n✅ /start : فعالسازی ربات\n❎ /stop : غیر فعالسازی ربات\n🤖 /bot : وضعیت ربات\n⏳ /time : ساعت\n📆 /date : تاریخ\n♻️ /del : حذف یک پیام\n🔒 /lock : قفل گروه\n🔓 /unlock : باز کردن قفل گروه\n⛔️ /ban : حذف کاربر\n📨 /send : ارسال پیام ناشناس\n🎶 /add : افزودن کاربر به گروه\n🗃 /panel : لیست دستورات ربات\n🔖 /user : اطلاعات کاربر\n📟 /cal : ماشین حساب\n📝 /font : ارسال فونت\n🌐 /ping : گرفتن پینگ سایت\n🔤 /tran : مترجم انگلیسی\n💣 /bomber : اسپم پیامک\n ─┅━━━━━━━┅─ \n🔮 سرگرمی ها :\n✢ با ارسال کلمه جوک ربات برای شما یک جوک ارسال میکند .\n✢ با ارسال کلمه دانستنی ربات برای شما یک دانستنی ارسال میکند .\n ✢ با ارسال کلمه فال ربات برای شما یک فال ارسال میکند .\n✢ با ارسال کلمه داستان ربات برای شما یک داستان ارسال میکند ‌.\n✢ با ارسال کلمه هواشناسی ... ربات آب و هوای اون منطقه رو ارسال میکند .\n✢ با ارسال کلمه اخبار ربات اخبار دقیق همون روز رو ارسال میکند .\n✢ با ارسال کلمه بیوگرافی ربات یک بیوگرافی به طور تصادفی ارسال میکند .\n✢ با ارسال کلمه ذکر ربات ذکر روز رو ارسال میکند.\n✢ با ارسال کلمه حدیث ربات یک حدیث ارسال میکند.\n─┅━━━━━━━┅─ \n🔸ChanneL : rubika.ir/belectron1_bot")
 				
 					elif msg.get("text").startswith("/cal"):
 						msd = msg.get("text")
@@ -931,7 +931,7 @@ while True:
 						bot.sendMessage(target, "تو کست", message_id=msg["message_id"])
 					
 					elif msg.get("text").startswith("آموزش ساخت ربات"):
-						bot.sendMessage(target, "سید اگه میخوای توعم ربات داشته باشی بیا داخل چنل زیر و ربات خودتو بساز :\nhttps://rubika.ir/joinc/BDJGHCCB0JWSIFSUOJJSRFNAMZLSNYRV", message_id=msg["message_id"])
+						bot.sendMessage(target, "سید اگه میخوای توعم ربات داشته باشی بیا داخل چنل زیر و ربات خودتو بساز :\nh", message_id=msg["message_id"])
 						
 					elif msg.get("text") == "کونده":
 						bot.sendMessage(target,
@@ -1031,7 +1031,7 @@ while True:
 						 or "عشقم ممده" or "دیگه هیشکیو دوست ندارم", message_id=msg.get("message_id"))
 							
 					elif msg.get("text") == "بابات کیه":
-						bot.sendMessage(target, "حضرت آقا محمد بلکترون 😂😔💜\n@seyed_xxx", message_id=msg.get("message_id"))
+						bot.sendMessage(target, "حضرت آقا سعید 😂😔💜/n @saeed778", message_id=msg.get("message_id"))
 							
 					elif msg.get("text") == "آفرین":
 						bot.sendMessage(target, "میدونم من خدام😂😔💋", message_id=msg.get("message_id"))
@@ -1040,7 +1040,7 @@ while True:
 						bot.sendMessage(target, "چیه حاجی ادم ندیدی", message_id=msg.get("message_id"))
 							
 					elif msg.get("text") == "کانال":
-						bot.sendMessage(target, "🤖 کانال ما :\nhttp://rubika.ir/belectron_bot", message_id=msg.get("message_id"))
+						bot.sendMessage(target, "🤖 کانال ما :\nhttp://rubika.ir/belectron1_bot", message_id=msg.get("message_id"))
 							
 					elif msg.get("text") == "ممد":
 						bot.sendMessage(target, "کیرم تو کسعمت"or "ممد مال منه", message_id=msg.get("message_id"))		
@@ -1057,7 +1057,7 @@ while True:
 						bot.sendMessage(target, "چقد صدام میزنی حاجی خارمو ساییدی", message_id=msg.get("message_id"))
 						
 					elif msg.get("text") == "/bomber":
-						bot.sendMessage(target, "کاربر گرامی لطفا اقدام به خرید اشتراک بکنید سپس میتوانید از این دستور استفاده کنید.\nchannel : @Belectron_bot", message_id=msg.get("message_id"))
+						bot.sendMessage(target, "کاربر گرامی لطفا اقدام به خرید اشتراک بکنید سپس میتوانید از این دستور استفاده کنید.\nchannel : @Belectron1_bot", message_id=msg.get("message_id"))
 								
 					elif msg.get("text") == "خوبی عزیزم":
 						bot.sendMessage(target, "اوفف به من گفتی عزیزم؟🤤💜", message_id=msg.get("message_id"))
@@ -1299,7 +1299,7 @@ while True:
 				
 				elif data["type"]=="AddedGroupMembers":
 					user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"Hey {user} 💜\nWelcome to {name} 🛸\n channel : @Belectron_bot 🗿", message_id=msg["message_id"])
+					bot.sendMessage(target, f"Hey {user} 💜\nWelcome to {name} 🛸\n channel : @Belectron1_bot 🗿", message_id=msg["message_id"])
 				
 				elif data["type"]=="LeaveGroup":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
@@ -1307,7 +1307,7 @@ while True:
 					
 				elif data["type"]=="JoinedGroupByLink":
 					user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-					bot.sendMessage(target, f"Hey {user} 💜\nWelcome to {name} 🛸\nChannel : @Belectron_bot 🗿", message_id=msg["message_id"])
+					bot.sendMessage(target, f"Hey {user} 💜\nWelcome to {name} 🛸\nChannel : @Belectron1_bot 🗿", message_id=msg["message_id"])
 
 			answered.append(msg.get("message_id"))
 
