@@ -58,7 +58,7 @@ print("")
 bot = Bot("Bel", auth=input("Please Enter Your Auth :"))
 target=input("Please Enter Your Guid (Group) :")
 
-# Created By Mamad BeLectron
+# Created By Mamad robot
 
 def hasAds(msg):
 	links = ["http://","https://",".ir",".com",".org",".net",".me"]
@@ -275,13 +275,6 @@ while True:
 								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
 							except:
 								print("err dastorat")
-
-                                                                 elif msg.get("text") == "/jok":
-							              try:
-								      rules = open("jok.txt","r",encoding='utf-8').read()
-								      bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
-							              except:
-								       print("err dastorat")          
 								
 						elif msg.get("text") == "درباره گروه":
 							try:
@@ -404,7 +397,7 @@ while True:
 
 						elif msg.get("text") == "/bomber":
 							try:
-								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n ", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n , message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 		
@@ -664,7 +657,7 @@ while True:
 					elif data["type"]=="AddedGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err add member answer")
