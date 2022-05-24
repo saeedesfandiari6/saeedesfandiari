@@ -649,7 +649,7 @@ while True:
 					if data["type"]=="RemoveGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"تق خارکسه {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f" دیدی کپص پدرت گزاشتم {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err rm member answer")
@@ -665,7 +665,7 @@ while True:
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"کون لقت {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f" لف دادن کون نیس که هر دفعه میدی {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
