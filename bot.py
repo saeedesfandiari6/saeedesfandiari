@@ -197,20 +197,13 @@ while True:
 							except:
 								print("err dastorat")
 								
-						elif msg.get("text") == "/jok":
-							try:
-								rules = open("jok.txt","r",encoding='utf-8').read()
-								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
-							except:
-								print("err dastorat")
-
 						elif msg.get("text") == "ادمین":
 							try:
 								rules = open("admen.txt","r",encoding='utf-8').read()
 								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
 							except:
 								print("err dastorat")
-
+								
 						elif msg.get("text").startswith("آپدیت ادمین") and msg.get("author_object_guid") in admins:
 							try:
 								rules = open("admen.txt","w",encoding='utf-8').write(str(msg.get("text").strip("آپدیت ادمین")))
@@ -282,6 +275,13 @@ while True:
 								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
 							except:
 								print("err dastorat")
+
+                                                                 elif msg.get("text") == "/jok":
+							              try:
+								      rules = open("jok.txt","r",encoding='utf-8').read()
+								      bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
+							              except:
+								       print("err dastorat")          
 								
 						elif msg.get("text") == "درباره گروه":
 							try:
@@ -289,7 +289,7 @@ while True:
 								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
 							except:
 								print("err dastorat")
-
+								
 						elif msg.get("text").startswith("آپدیت درباره") and msg.get("author_object_guid") in admins:
 							try:
 								rules = open("rules.txt","w",encoding='utf-8').write(str(msg.get("text").strip("آپدیت درباره")))
@@ -393,8 +393,8 @@ while True:
 						elif msg.get("text").startswith("خوبی") or msg.get("text").startswith("text"):
 							try:
 					  			bot.sendMessage(target, "تا وقتی کونت مال من باشه من حالم خوبه خوبهههههه💜", message_id=msg.get("message_id"))
-						     except:
-								 print("err luagh")
+							except:
+								print("err luagh")
 								
 						elif msg.get("text") == "🤣🤣🤣":
 							try:
@@ -404,7 +404,7 @@ while True:
 
 						elif msg.get("text") == "/bomber":
 							try:
-								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n #Admin --> @saeed_lsl021", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "💣 Bomber PaneL \n📍 این دستور توسط سازنده ربات برای کاربرانی که از نسخه رایگان ربات استفاده میکنند متوقف شده است . برای خرید این دستور لطفا به پیوی زیر مراجعه کنید.\n ", message_id=msg.get("message_id"))
 							except:
 								print("err poker answer")
 		
@@ -664,7 +664,7 @@ while True:
 					elif data["type"]=="AddedGroupMembers":
 						try:
 							user = bot.getUserInfo(data['peer_objects'][0]['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/robot_000", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err add member answer")
@@ -672,23 +672,15 @@ while True:
 					elif data["type"]=="LeaveGroup":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"لف دادن کون نیس که هر دفع میدی {user}", message_id=msg["message_id"])
+							bot.sendMessage(target, f"کون لقت {user}", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Leave member Answer")
-
-					elif data["type"]=="LeaveGroup":
-    						try:
-							    user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							    bot.sendMessage(target, f"افرین لف دادی جنده {user}", message_id=msg["message_id"])
-							# bot.deleteMessages(target, [msg["message_id"]])
-						except:
-							print("err Leave member Answer")
-
+							
 					elif data["type"]=="JoinedGroupByLink":
 						try:
 							user = bot.getUserInfo(data['performer_object']['object_guid'])["data"]["user"]["first_name"]
-							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n🔗 ChanneL; rubika.ir/robot_000", message_id=msg["message_id"])
+							bot.sendMessage(target, f"Hey {user} 🍒 !\nWelcome to {name} 🏖\n\n📑 To get information about robot commands, send a /panel command !\n", message_id=msg["message_id"])
 							# bot.deleteMessages(target, [msg["message_id"]])
 						except:
 							print("err Joined member Answer")
@@ -708,12 +700,12 @@ while True:
 			answered.append(msg.get("message_id"))
 			print("[" + msg.get("message_id")+ "] >>> " + msg.get("text") + "\n")
 
-	     except KeyboardInterrupt:
+	except KeyboardInterrupt:
 		exit()
 
-         	except Exception as e:
-	     	if type(e) in list(retries.keys()):
-     		if retries[type(e)] < 3:
+	except Exception as e:
+		if type(e) in list(retries.keys()):
+			if retries[type(e)] < 3:
 				retries[type(e)] += 1
 				continue
 			else:
