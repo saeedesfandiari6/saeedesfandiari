@@ -277,7 +277,7 @@ while True:
 							except:
 								print("err dastorat")
 
-						elif msg.get("text") == "درباره گروه":
+						elif msg.get("text") == "دستورات":
 							try:
 								rules = open("help.txt","r",encoding='utf-8').read()
 								bot.sendMessage(target, str(rules), message_id=msg.get("message_id"))
