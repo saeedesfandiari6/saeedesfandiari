@@ -185,10 +185,10 @@ while True:
 									# bot.sendMessage(target, "✅ کاربر اکنون عضو گروه است", message_id=msg.get("message_id"))
 
 							except IndexError:
-								bot.sendMessage(target, "❌ چشات کورن دستور به درست بزن دیگه", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ داداش ترو جون من درست بزن", message_id=msg.get("message_id"))
 							
 							except:
-								bot.sendMessage(target, "❌ کصکش جغی دستور درست بزن", message_id=msg.get("message_id"))
+								bot.sendMessage(target, "❌ من تو رو بگیر استغفرالله کصکش دستور درست بزن", message_id=msg.get("message_id"))
 								
 						elif msg.get("text") == "جرعت و حقیقت":
 							try:
